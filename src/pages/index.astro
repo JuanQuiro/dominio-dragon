@@ -1,42 +1,35 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import { SITE } from '~/config.mjs';
+import { getCanonical, getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import HighlightedPosts from '~/components/blog/HighlightedPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+	title: SITE.title,
+	description: SITE.description,
+	canonical: getCanonical(getHomePermalink()),
+};
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🐉‍ Hola, visitante!</h1>
-        <h1>Hola soy Juan Quirz, desarrollador fullstack frontend</h1>
-			<p>
-				Esta pagina fue creada en <a href="https://www.lunarvim.org/">lunar vim</a> y escrita en <a href="https://astro.build/">Astro</a> <br>
-        Con las tecnologias:
-          <ul>
-            <li><a href="https://tailwindcss.com/">Tailwind</a></li>
-          </ul>
-			</p>
-      <p>
-        Algunas de tecnologias que conozco estan :
-        <ul>
-          <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
-          <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
-          <li><a href="https://es.wikipedia.org/wiki/JavaScript">JavaScripts</a></li>
-          <li><a href="https://reactjs.org/">Reactjs</a></li>
-          <li><a href="https://vuejs.org/">Vuejs </a></li>
-           
-            <ul>
-              <li>Cloud Computing Services</li>
-              <li><a href="https://cloud.google.com/">Google Cloud</a></li>
-              <li><a href="https://azure.microsoft.com/en-us/">Microsoft Azure</a></li>
-            </ul>
-        </ul>
-		<Footer />
-	</body>
-</html>
+<Layout {meta}>
+	<Hero />
+	<Note />
+	<Features />
+	<Steps />
+	<Features2 />
+	<Features3 />
+	<HighlightedPosts />
+	<FAQs />
+	<Stats />
+	<CallToAction />
+</Layout>
