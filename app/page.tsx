@@ -70,7 +70,7 @@ export default function Home() {
   ];
   return (
     <main>
-      <section className="  grid grid-cols-2 text-left">
+      <section className="h-screen grid grid-cols-2 text-left">
         <div>
           <h3
             className={`absolute border-wave  text-sm sm:text-2xl lg:text-2xl xl:text-3xl   ${rubik.className} font-semibold`}
@@ -131,14 +131,14 @@ export default function Home() {
           placeholder="blur"
           className="self-center"
         />
-      </section>
-      <section className="col-span-2">
-        <div className="bg-primary mt-44 mb-10 p-2 text-center">
-          {" "}
-          <p className="mx-auto text-primary-content">
-            Si puedes imaginarlo, puedes crearlo🙌
-          </p>
-        </div>
+        <section className="grid col-span-2 items-center  ">
+          <div className=" bg-primary  p-2 text-center">
+            {" "}
+            <p className="mx-auto text-primary-content">
+              Si puedes imaginarlo, puedes crearlo🙌
+            </p>
+          </div>
+        </section>
       </section>
       <section>
         <div className="hero min-h-screen ">
@@ -149,12 +149,12 @@ export default function Home() {
                 ¿Como lo puedo ayudar como Programador?
               </h1>
               <span className="text-sm">Mis Herraminetas y skill son:</span>
-              <p className="grid grid-cols-2 py-6">
+              <p className="grid grid-cols-2  py-6">
                 {card.map((ev, i) => {
                   return (
                     <div
                       key={i}
-                      className="group h-24 w-24 sm:h-52 sm:w-52 [perspective:1000px]"
+                      className="group mx-auto mt-4 h-24 w-24 sm:h-52 sm:w-52 [perspective:1000px]"
                     >
                       <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div className="absolute inset-0">
