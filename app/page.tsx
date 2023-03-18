@@ -8,11 +8,18 @@ import iconWordpress from "../public/wordpress-icon-alt.svg";
 import iconGeneralista from "../public/general.png";
 import iconHonestidad from "../public/honestidad.png";
 import iconInnovar from "../public/innovar.png";
+import iconGithub from "../public/github-icon.svg";
+import iconLinkedin from "../public/linkedin-icon.svg";
 import Link from "next/link";
 import { Rubik } from "next/font/google";
 import Footer from "./components/footer";
 
 const rubik = Rubik({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "Inicio - Domino Dragon",
+  description: "Es el inicio del sitio web de Juan Quiroz",
+};
 
 export default function Home() {
   const cualidades = [
@@ -102,7 +109,7 @@ export default function Home() {
                 <div className="flex gap-2">
                   <Link href={"https://github.com/JuanQuiro"}>Github</Link>
                   <Image
-                    src={"github-icon.svg"}
+                    src={iconGithub}
                     alt="Picture of the author"
                     width={20}
                     height={20}
@@ -115,7 +122,7 @@ export default function Home() {
                     Linkedin
                   </Link>
                   <Image
-                    src={"linkedin-icon.svg"}
+                    src={iconLinkedin}
                     alt="Picture of the author"
                     width={20}
                     height={20}
@@ -131,14 +138,6 @@ export default function Home() {
           placeholder="blur"
           className="self-center"
         />
-        <section className="grid col-span-2 items-center  ">
-          <div className=" bg-primary  p-2 text-center">
-            {" "}
-            <p className="mx-auto text-primary-content">
-              Si puedes imaginarlo, puedes crearlo🙌
-            </p>
-          </div>
-        </section>
       </section>
       <section>
         <div className="hero min-h-screen ">
@@ -266,9 +265,9 @@ export default function Home() {
                 <Image
                   alt={`Imagen que refleja o simboliza ${el.title}`}
                   src={el.imagen}
-                  height={50}
-                  width={50}
-                  className="ml-2 inline"
+                  height={20}
+                  width={20}
+                  className=" sm:w-10 ml-2 inline"
                 />
               </p>
               <p>{el.contenido}</p>
@@ -276,7 +275,11 @@ export default function Home() {
           );
         })}
       </section>
-      <Footer />
+      <footer className="fixed bg-primary-focus text-primary-content left-0 bottom-0 h-8 w-full footer footer-center ">
+        <div>
+          <p>Si puedes imaginarlo, puedes crearlo🙌</p>
+        </div>
+      </footer>
     </main>
   );
 }
