@@ -51,9 +51,9 @@ export default function Presupuesto() {
         <div>
           <p>
             Es una estimacion, el 60% de los casos la estimacion es{" "}
-            <p className="inline text-secondary-focus font-extrabold">
-              erronea
-            </p>
+            <span className="decoration-double underline  text-secondary-focus tracking-tighter font-extrabold">
+              Inexacta
+            </span>
           </p>
         </div>
       </footer>

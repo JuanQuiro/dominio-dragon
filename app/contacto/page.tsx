@@ -31,6 +31,7 @@ export default function Contacto() {
         >
           <div className="mb-2">
             <label
+              htmlFor="name"
               typeof="name"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
@@ -48,6 +49,7 @@ export default function Contacto() {
 
           <div className="mb-2">
             <label
+              htmlFor="email"
               typeof="email"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
@@ -64,11 +66,13 @@ export default function Contacto() {
           </div>
 
           <div className="form-control">
-            <label className="label">
-              <span className="text-sm font-medium">Consulta</span>
+            <label className="label text-sm font-medium" htmlFor="user_mensaje">
+              Consulta
             </label>
             <textarea
+              id="user_mensaje"
               name="user_mensaje"
+              typeof="text"
               className="textarea mb-5 textarea-bordered h-24"
               placeholder="Mi negocio quiere crecer exponencialmente para ello he decidido crear una pagina web"
             ></textarea>

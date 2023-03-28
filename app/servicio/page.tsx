@@ -29,7 +29,7 @@ export default function Servicio() {
     },
   ];
   return (
-    <>
+    <div >
       <h2
         className={`text-center  mb-8 bg-primary text-white text-xl sm:text-xl lg:text-2xl  `}
       >
@@ -47,6 +47,6 @@ export default function Servicio() {
           </div>
         );
       })}
-    </>
+    </div>
   );
 }

@@ -42,18 +42,18 @@ export default function Portafolio() {
       {portafolio.map((el, i) => (
         <Link
           href={el.url ? el.url : "#"}
-          className="group dark:hover:text-black grid grid-cols-2 hover:bg-primary-content"
+          className="group dark:hover:text-black grid grid-cols-2 hover:bg-primary"
           key={i}
         >
           <div className="grid items-center ">
             <div className="m-2">
-              <h3 className="text-xl group-hover:font-bold">{el.title}</h3>
+              <h3 className="text-xl text-primary-focus group-hover:text-white group-hover:font-bold">{el.title}</h3>
               <p className=" indent-1 sm:text-base text-xs">{el.content}</p>
             </div>
           </div>
           <div className="flex justify-end">
             <Image
-              className=" m-3 border group-hover:border-2 group-hover:border-black "
+              className=" m-3 border-dashed group-hover:border-2 group-hover:border-black "
               src={el.imagen}
               width={300}
               height={300}
