@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import perfil from "../public/dragon-logo.png";
+import perfil from "../../public/dragon-logo.png";
 
 export default function Home() {
   return (

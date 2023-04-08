@@ -87,18 +87,18 @@ export default function Home() {
   ];
   return (
     <main>
-      <section className="h-[90vh]">
+      <section className="h-[88vh]">
         <div>
           <Image
             src={juanquiroz}
-            className="absolute  h-[90vh] w-[99.4vw] object-cover"
+            className="absolute  h-[88vh] w-[99.9vw] object-cover"
             alt="Juan Quiroz"
             quality={100}
             priority
             fill
           />
         </div>
-        <div className="absolute  w-[99.4vw] h-[90vh] grid  grid-cols-2">
+        <div className="absolute  w-[99.9vw] h-[88vh] grid  grid-cols-2">
           <div className="group text-left bg-primary/5 hover:bg-primary/20">
             <h1 className="text-3xl font-bold group-hover:text-white text-white/50">
               Desarrollador <span className="type-desarrollo"></span>
