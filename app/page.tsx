@@ -99,10 +99,10 @@ export default function Home() {
           />
         </div>
         <div className="absolute  w-[99.9vw] h-[88vh] grid  grid-cols-2">
-          <div className="group text-left bg-primary/5 hover:bg-primary/20">
-            <h1 className="text-3xl font-bold group-hover:text-white text-white/50">
+          <div className="group p-4 transition duration-700 ease-in-out text-left bg-primary/5 hover:bg-primary/20">
+            <p className="text-3xl font-bold  group-hover:text-white text-white/50">
               Desarrollador <span className="type-desarrollo"></span>
-            </h1>
+            </p>
             <div>
               <p className="text-lg mt-2 text-gray-500">
                 Mi nombre es Juan Quiroz y soy alguien que le apasiona conectar la tecnologia con la vida Real
@@ -149,10 +149,10 @@ export default function Home() {
             </div>
           </div>
           {/* Es el lado rojo */}
-          <div className="group text-right bg-secondary/5 hover:bg-secondary/20">
-            <h2 className="text-3xl font-bold group-hover:text-white text-white/50">
+          <div className="group p-4 transition duration-700 ease-in-out text-right bg-secondary/5 hover:bg-secondary/20">
+            <p className="text-3xl font-bold group-hover:text-white text-white/50">
               <span className="type-contenido"></span>
-            </h2>
+            </p>
             <p className="text-lg text-gray-500 mt-2 ">
               Mi nombre es Juan Quiroz y soy alguien que le gusta impactar a muchas personas creando contenido de valor
               <br />
