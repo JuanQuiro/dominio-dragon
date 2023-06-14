@@ -18,5 +18,11 @@ export default {
       },
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: [],
+  },
+  plugins: [
+    require("tailwind-scrollbar")({ nocompatible: true }),
+    require("daisyui"),
+  ],
 } satisfies Config;
