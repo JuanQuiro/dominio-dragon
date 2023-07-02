@@ -1,183 +1,155 @@
-import { hkdf } from "crypto";
+"use client";
 import Image from "next/image";
+import MyImage from "@/public/headshot.webp";
+import SplashBg from "@/public/imgs/splash_bg.png";
 import Link from "next/link";
-
-import juanquiroz from "../public/juan-quiroz.png";
-export const metadata = {
-  title: "Inicio - Domino Dragon",
-  description: "Es el inicio del sitio web de Juan Quiroz",
-};
+import data from "@/data.json" assert { type: "JSON" };
+import { RoughNotation } from "react-rough-notation";
+import "./globals.css";
+import {
+  SvgEducation,
+  SvgEducationCardBottom,
+  SvgEducationCardTop,
+  SvgHome,
+} from "./svg/waves-svg";
 
 export default function Home() {
-  const desarrollador = [
-    {
-      image: "github-icon-1.svg",
-      link: "https://github.com/JuanQuiro",
-    },
-    {
-      image: "linkedin-icon.svg",
-      link: "https://www.linkedin.com/in/jukiro/",
-    },
-    {
-      image: "nextjs-icon.svg",
-      link: "https://nextjs.org/",
-    },
-    {
-      image: "react.svg",
-      link: "https://reactjs.org/",
-    },
-    {
-      image: "vue.svg",
-      link: "https://vuejs.org/",
-    },
-    {
-      image: "nuxt-icon.svg",
-      link: "https://nuxtjs.org/",
-    },
-    {
-      image: "tailwindcss-icon.svg",
-      link: "https://tailwindcss.com/",
-    },
-    {
-      image: "nodejs-icon.svg",
-      link: "https://nodejs.org/",
-    },
-    {
-      image: "express.svg",
-      link: "https://expressjs.com/",
-      w: 50,
-      h: 50,
-    },
-    {
-      image: "firebase.svg",
-      link: "https://firebase.google.com/?hl=es",
-    },
-  ];
-  const creacion = [
-    {
-      image: "instagram-icon.svg",
-      link: "https://www.instagram.com/juanquiroz/",
-    },
-    {
-      image: "twitter.svg",
-      link: "https://twitter.com/juanquiroz",
-    },
-    {
-      image: "facebook.svg",
-      link: "https://www.facebook.com/juanquiroz",
-    },
-    {
-      image: "youtube-icon.svg",
-      link: "https://www.youtube.com/",
-    },
-    {
-      image: "figma.svg",
-      link: "https://www.figma.com/",
-      w: 15,
-      h: 15,
-    },
-  ];
-  const serviciosDesarrollo = [
-    {
-      image: "fiverr.svg",
-      link: "https://es.fiverr.com/juanquiro",
-      w: 50,
-      h: 50,
-    },
-  ];
+  const { socials, educations } = data;
+
   return (
     <main>
-      <section className="h-[88vh]">
-        <div>
-          <Image
-            src={juanquiroz}
-            className="absolute  h-[88vh] w-[99.9vw] object-cover"
-            alt="Juan Quiroz"
-            quality={100}
-            priority
-            fill
-          />
-        </div>
-        <div className="absolute  w-[99.9vw] h-[88vh] grid  grid-cols-2">
-          <div className="group p-4 transition duration-700 ease-in-out text-left bg-primary/5 hover:bg-primary/20">
-            <p className="text-3xl font-bold  group-hover:text-white text-white/50">
-              Desarrollador <span className="type-desarrollo"></span>
-            </p>
-            <div>
-              <p className="text-lg mt-2 text-gray-500">
-                Mi nombre es Juan Quiroz y soy alguien que le apasiona conectar la tecnologia con la vida Real
-                <br />
-                <br />
-                <span className="italic font-semibold group-hover:text-white/80">
-                  Las tecnologias que utilizo para el desarrollo son:
-                </span>
-                <br />
-              </p>
-              <div className="flex mt-2">
-                {desarrollador.map(({ image, link, w = 20, h = 20 }, i) => {
-                  return (
-                    <Link className="mx-1" key={i} href={link}>
-                      <Image
-                        src={image}
-                        width={w}
-                        height={h}
-                        alt="Es una tecnologia que utilizo para el desarrollo"
-                      />
-                    </Link>
-                  );
-                })}
+      <section className="relative w-full">
+        <article className="container mx-auto">
+          {/* Home */}
+
+          <div className="flex flex-col justify-center items-center min-h-[95vh] w-full">
+            <div className="relative flex justify-center md:items-center md:gap-24">
+              <div className="hidden xl:block">
+                <Image
+                  src={MyImage}
+                  alt="headshot.jpg"
+                  className="md:w-[380px] md:h-[400px] rounded-full border-yellow-600 border-2"
+                  priority={true}
+                />
+                <Image
+                  src={SplashBg}
+                  alt="splash.png"
+                  className="md:w-[380px] absolute -top-3 left-0 -z-10 scale-150 saturate-50"
+                  priority={true}
+                />
               </div>
-              <h3 className="mt-5 text-gray-500 italic font-semibold group-hover:text-white/80">
-                Ofrezco mis servicios en:
-              </h3>
-              <div className="flex mt-2">
-                {serviciosDesarrollo.map(
-                  ({ image, link, w = 20, h = 20 }, i) => {
+
+              <div className="flex flex-col items-start gap-8">
+                <h2 className="bg-gradient-to-r w-full from-amber-200 to-yellow-500 bg-clip-text text-4xl font-bold leading-[1.1] text-transparent text-center md:text-left">
+                  Dominio Dragon
+                </h2>
+                <p className="font-medium text-lg xl:text-xl text-center md:text-left max-w-[50ch] text-[#cfdbd5]">
+                  Saludos 👋 mi nombre es Juan Quiroz y me desempeño como
+                  desarrollador Full Stack.
+                </p>
+                <div className="flex justify-center w-full gap-1 md:gap-5 md:justify-start">
+                  <Link
+                    className="grid place-content-center md:text-xl text-neutral-900 font-bold py-1 px-4 bg-[#f5cb5c] border-[#f5cb5c] shadow border-2 transition-all rounded hover:border-[#f5cb5c] hover:bg-transparent hover:text-[#f5cb5c]"
+                    href="/JuanQuiroz.pdf"
+                    target="_blank"
+                  >
+                    ¡Échale un vistazo a mi CV!
+                  </Link>
+                  <Link
+                    className="grid place-content-center md:text-xl text-[#f5cb5c] font-bold py-1 px-4 bg-transparent border-2 border-[#f5cb5c] transition-all rounded hover:border-[#f5cb5c] shadow hover:bg-[#f5cb5c] hover:text-neutral-900"
+                    href="mailto:juanquirozsana@gmail.com"
+                  >
+                    ¡Contáctame!
+                  </Link>
+                </div>
+                <div className="flex justify-center w-full gap-5 md:justify-start">
+                  {socials.map((item, idx) => {
                     return (
-                      <Link className="mx-1" key={i} href={link}>
+                      <Link
+                        key={idx}
+                        className="ring-2 ring-[#242423]/[33] bg-neutral-900 w-10 h-10 flex items-center justify-center rounded-full transition-all hover:ring-[#f5cb5c]/[50] hover:scale-105"
+                        href={item.link}
+                        target="_blank"
+                      >
                         <Image
-                          src={image}
-                          width={w}
-                          height={h}
-                          alt="Es una tecnologia que utilizo para el desarrollo"
+                          src={item.icon}
+                          alt="icon"
+                          width={20}
+                          height={20}
+                          className="invert"
                         />
                       </Link>
                     );
-                  }
-                )}
+                  })}
+                </div>
               </div>
             </div>
           </div>
-          {/* Es el lado rojo */}
-          <div className="group p-4 transition duration-700 ease-in-out text-right bg-secondary/5 hover:bg-secondary/20">
-            <p className="text-3xl font-bold group-hover:text-white text-white/50">
-              <span className="type-contenido"></span>
+        </article>
+        <SvgHome />
+      </section>
+
+      {/* About me */}
+
+      <section className="w-full h-auto py-32  px-24 bg-[#f5cb5c]">
+        <div className="container flex flex-col items-center justify-center gap-12 mx-auto md:flex-row">
+          <RoughNotation type="box" show={true} color="#171717" padding={30}>
+            <h2 className="text-[#171717] hover:text-yellow-950/70 duration-700  text-5xl font-bold leading-[1.2] tracking-wider text-center my-2">
+              Sobre mí
+            </h2>
+          </RoughNotation>
+          <div className="text-neutral-700 font-medium tracking-tight text-xl p-2 max-w-[60ch]">
+            <p>
+              Me he desempeñado como desarrollador por un años en el desarrollo
+              de software, soy 100% autodidacta teniendo como foco objetivos
+              desafiantes
             </p>
-            <p className="text-lg text-gray-500 mt-2 ">
-              Mi nombre es Juan Quiroz y soy alguien que le gusta impactar a muchas personas creando contenido de valor
-              <br />
-              <br />
-              <span className="italic font-semibold group-hover:text-white/80">
-                Las herramientas que utilizo para la creacion de contenido son:
-              </span>
-              <br />
-            </p>
-            <div className="flex mt-2 justify-end">
-              {creacion.map(({ image, link, h = 20, w = 20 }) => {
-                return (
-                  <Link className="mx-1" key={link} href={link}>
-                    <Image
-                      src={image}
-                      width={w}
-                      height={h}
-                      alt="Es una herramienta que utilizo para la creacion de contenido"
-                    />
-                  </Link>
-                );
-              })}
-            </div>
           </div>
         </div>
+      </section>
+
+      {/* Education */}
+
+      <section className="relative w-full h-auto pb-40 pt-80">
+        <article className="container flex flex-col items-center mx-auto">
+          <RoughNotation type="underline" show={true} color="#f5cb5c">
+            <h2 className="text-[#f5cb5c] text-5xl font-bold leading-[1.2] tracking-wider text-center my-1">
+              Educación
+            </h2>
+          </RoughNotation>
+          <div className="flex flex-wrap justify-center gap-5 mt-10">
+            {educations.map((item, idx) => {
+              return (
+                <div
+                  key={idx}
+                  className="relative ring-2 ring-[#242423]/[33] w-80 h-[500px] shadow-lg m-4 p-4 rounded transition-all hover:ring-[#f5cb5c]/[50]"
+                >
+                  <h2 className="text-[#f5cb5c] font-medium tracking-tighter text-xl h-16">
+                    {item.title}
+                  </h2>
+                  <hr className="bg-[#cfdbd5] h-1 w-full mb-3" />
+                  <p className="text-[#cfdbd5]">{item.description}</p>
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    className="absolute bottom-4 right-4 left-4 grid place-content-center md:text-xl text-neutral-900 font-bold py-1 px-4 bg-[#f5cb5c] border-[#f5cb5c] shadow border-2 transition-all rounded-sm hover:border-[#f5cb5c] hover:bg-transparent hover:text-[#f5cb5c]"
+                  >
+                    Ver certificado
+                  </Link>
+
+                  <div className="custom-shape-divider-top-1677342557">
+                    <SvgEducationCardTop />
+                  </div>
+
+                  <div className="custom-shape-divider-bottom-1677342378">
+                    <SvgEducationCardBottom />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </article>
+        <SvgEducation />
       </section>
     </main>
   );

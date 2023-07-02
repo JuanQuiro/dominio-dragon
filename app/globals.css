@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll style */
+
+:root {
+  --scroll-size: 16px;
+  --scroll-bg: #171717;
+  --scroll-radius: 8px;
+  --scroll-padding: 4px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: var(--scroll-bg);
+}
+
+.scroll::-webkit-scrollbar {
+  width: var(--scroll-size);
+  height: var(--scroll-size);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #373737;
+  border-radius: var(--scroll-radius);
+  border: var(--scroll-padding) solid transparent;
+  background-clip: content-box;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #545454;
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-attachment: fixed;
+}
+
+.custom-shape-divider-bottom-1677342378 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-bottom-1677342378 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 192px;
+}
+
+.custom-shape-divider-bottom-1677342378 .shape-fill {
+  fill: #171717BF;
+}
+
+.custom-shape-divider-top-1677342557 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1677342557 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 69px;
+}
+
+.custom-shape-divider-top-1677342557 .shape-fill {
+  fill: #171717BF;
+}
+
+.custom-shape-divider-top-1677534207 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1677534207 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-top-1677534207 .shape-fill {
+  fill: #F5CB5C;
+}
+
+.custom-shape-divider-bottom-1682177013 {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1682177013 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-bottom-1682177013 .shape-fill {
+  fill: #F5CB5C;
+}

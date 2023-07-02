@@ -1,0 +1,287 @@
+{
+  "skills": {
+    "backend": [
+      {
+        "title": "Java",
+        "icon": "https://img.icons8.com/ios/256/java-coffee-cup-logo.png"
+      },
+      {
+        "title": "Spring boot",
+        "icon": "https://simpleicons.org/icons/springboot.svg"
+      },
+      {
+        "title": "MySQL",
+        "icon": "https://simpleicons.org/icons/mysql.svg"
+      },
+      {
+        "title": "TypeScript",
+        "icon": "https://simpleicons.org/icons/typescript.svg"
+      },
+      {
+        "title": "NodeJS",
+        "icon": "https://simpleicons.org/icons/nodedotjs.svg"
+      },
+      {
+        "title": "ExpressJS",
+        "icon": "https://simpleicons.org/icons/express.svg"
+      },
+      {
+        "title": "Socket.io",
+        "icon": "https://simpleicons.org/icons/socketdotio.svg"
+      }
+    ],
+    "frontend": [
+      {
+        "title": "HTML5",
+        "icon": "https://simpleicons.org/icons/html5.svg"
+      },
+      {
+        "title": "CSS3",
+        "icon": "https://simpleicons.org/icons/css3.svg"
+      },
+      {
+        "title": "JavaScript",
+        "icon": "https://simpleicons.org/icons/javascript.svg"
+      },
+      {
+        "title": "Angular",
+        "icon": "https://simpleicons.org/icons/angular.svg"
+      },
+      {
+        "title": "React",
+        "icon": "https://simpleicons.org/icons/react.svg"
+      },
+      {
+        "title": "TailwindCSS",
+        "icon": "https://simpleicons.org/icons/tailwindcss.svg"
+      },
+      {
+        "title": "Next.js",
+        "icon": "https://simpleicons.org/icons/nextdotjs.svg"
+      }
+    ],
+    "others": [
+      {
+        "title": "Git",
+        "icon": "https://simpleicons.org/icons/git.svg"
+      },
+      {
+        "title": "Figma",
+        "icon": "https://simpleicons.org/icons/figma.svg"
+      }
+    ]
+  },
+  "socials": [
+    {
+      "link": "https://github.com/JuanQuiro",
+      "icon": "https://simpleicons.org/icons/github.svg"
+    },
+    {
+      "link": "https://www.linkedin.com/in/dreyz/",
+      "icon": "https://simpleicons.org/icons/linkedin.svg"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Piedra, papel y tijeras",
+      "short_description": "Juego de piedra, papel y tijeras",
+      "description": "Es un juego de piedra, papel y tijeras, hecho por un reto de FrontMentor",
+      "repository": "https://github.com/JuanQuiro/rock-paper-scissors",
+      "technologies": ["Nextjs", "TypeScript", "HTML", "CSS"],
+      "resources": ["Toastr", "NodeJS", "Font Awesome", "Google Fonts"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://rock-paper-scissors-juanquiroz.vercel.app/",
+      "img-gif": "",
+      "img": "/projects/img/1.png"
+    },
+    {
+      "id": 2,
+      "name": "Cine Virtual",
+      "short_description": "App Web que sirve para ver la tendencia de las peliculas",
+      "description": "App Web que sirve para ver la tendencia de las peliculas",
+      "repository": "",
+      "technologies": ["TypeScript", "JavaScript", "HTML", "CSS", "Angular"],
+      "resources": [
+        "Angular PWA",
+        "LocalStorage",
+        "Google Fonts",
+        "Font Awesome",
+        "SpeechSynthesis"
+      ],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://cine-virtual.vercel.app/",
+      "img": "/projects/img/2.png"
+    },
+    {
+      "id": 3,
+      "name": "Task",
+      "short_description": "Es un app de Todos",
+      "description": "Un pequeño proyecto con React el cual nos permite hacer llamados a la API de Unsplash y nos itera una pequeña cantidad de imágenes como resultado de nuestra búsqueda.",
+      "repository": "https://github.com/AlejandroDalzotto/galeria-de-imagenes",
+      "technologies": ["JavaScript", "HTML", "CSS", "React", "TailwindCSS"],
+      "resources": ["Unsplash API", "Font Awesome", "Aos Librery"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://task-huawd85o5-juanquiroz.vercel.app/",
+      "img": "/projects/img/3.png"
+    },
+    {
+      "id": 4,
+      "name": "Identidades Gatunas",
+      "short_description": "Es un sitio web creado en Vuejs",
+      "description": "Se trata de un sitio web de una cafetería ficticia que permite a los usuarios comprar una amplia variedad de productos de forma sencilla. A través de una interfaz fácil de usar, los usuarios pueden buscar y explorar una amplia selección de productos, que incluyen opciones como café, té, desayunos y postres.",
+      "repository": "https://identidades-vue.vercel.app/",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://identidades-vue.vercel.app/",
+      "img": "/projects/img/4.png"
+    },
+    {
+      "id": 5,
+      "name": "Filosofis",
+      "short_description": "Es un sitio web creado en Sveltte",
+      "description": "Se trata de un sitio web de una cafetería ficticia que permite a los usuarios comprar una amplia variedad de productos de forma sencilla. A través de una interfaz fácil de usar, los usuarios pueden buscar y explorar una amplia selección de productos, que incluyen opciones como café, té, desayunos y postres.",
+      "repository": "https://github.com/JuanQuiro/filosofis",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://filosofis.vercel.app/",
+      "img": "/projects/img/5.png"
+    },
+    {
+      "id": 6,
+      "name": "Rosa Martinez",
+      "short_description": "Es la pagina personal de rosa martinez",
+      "description": "Se trata de la pagina personal de rosa martinez",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://filosofis.vercel.app/",
+      "img": "/projects/img/6.png"
+    },
+    {
+      "id": 7,
+      "name": "Vision Holistica",
+      "short_description": "Es un sitio enfocado en el estudio de los astros",
+      "description": "Es una pagina enfocada en los estudios de los astros",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://filosofis.vercel.app/",
+      "img": "/projects/img/7.png"
+    },
+    {
+      "id": 8,
+      "name": "Maria Fernanda La Riva",
+      "short_description": "Es la pagina personal de Maria Fernanda La Riva",
+      "description": "Es la pagina personal de Maria Fernanda La Riva",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://mariaflariva1.wixsite.com/espanol/sobre",
+      "img": "/projects/img/8.png"
+    }
+  ],
+  "educations": [
+    {
+      "id": 1,
+      "title": "Técnico en Programación",
+      "description": "Esta carrera me ofrecio conocimientos y prácticas intensivas en diferentes tecnologías que me permiten analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado.",
+      "link": "/certificates/developer.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Curso de React & NextJS",
+      "description": "Este curso me ofreció conocimientos en React, Redux, NextJS y JavaScript para poder resolver problemas y desarrollar aplicaciones y páginas web de alto nivel y así poder entregar una asombrosa experiencia a los usuarios.",
+      "link": "/certificates/react.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Curso de Diseño UX/UI",
+      "description": "El curso que realicé me brindó valiosos conocimientos y prácticas en la investigación de usuarios, permitiéndome aprender cómo crear aplicaciones que satisfagan sus necesidades y ofrecer productos de alta calidad. Además, tuve la oportunidad de aprender sobre metodologías ágiles de trabajo, lo que me permitió encarar proyectos de manera más efectiva.",
+      "link": "/certificates/ux_desing.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Curso de NodeJS",
+      "description": "Gracias a este curso adquirí las bases del desarrollo de APIs Restful en NodeJS, WebServers y el manejo de WebSockets con la librería SocketIo.",
+      "link": "/certificates/nodejs.jpg"
+    }
+  ]
+}
