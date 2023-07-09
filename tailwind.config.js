@@ -5,8 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  daisyui: {
+    themes: [],
+  },
   theme: {
     extend: {
+      fontFamily: {
+        neue: ['var(--font-neue)'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -14,5 +20,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+    plugins: [require("daisyui")],
 }

@@ -261,27 +261,64 @@
   "educations": [
     {
       "id": 1,
-      "title": "Técnico en Programación",
-      "description": "Esta carrera me ofrecio conocimientos y prácticas intensivas en diferentes tecnologías que me permiten analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado.",
-      "link": "/certificates/developer.jpg"
+      "title": "Certificado de Olimpiadas - Nivel Nacional",
+      "description": "En el instituto tuve la oportunidad de ir a las olimpidas Venezolanas.",
+      "certificado": true,
+      "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/01/28/05def18c-e019-482d-b73d-ff50a0d0541d_juan-quiroz-ronda-fi.png"
     },
     {
       "id": 2,
-      "title": "Curso de React & NextJS",
-      "description": "Este curso me ofreció conocimientos en React, Redux, NextJS y JavaScript para poder resolver problemas y desarrollar aplicaciones y páginas web de alto nivel y así poder entregar una asombrosa experiencia a los usuarios.",
-      "link": "/certificates/react.jpg"
+      "title": "Certificado de Olimpiadas - Nivel Estadal",
+      "description": "En el instituto tuve la oportunidad de ir a las olimpidas Venezolanas",
+      "certificado": true,
+      "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/01/28/89517832-1e6b-492a-a591-21717dab9623_juan-quiroz-particip.png"
     },
     {
       "id": 3,
-      "title": "Curso de Diseño UX/UI",
-      "description": "El curso que realicé me brindó valiosos conocimientos y prácticas en la investigación de usuarios, permitiéndome aprender cómo crear aplicaciones que satisfagan sus necesidades y ofrecer productos de alta calidad. Además, tuve la oportunidad de aprender sobre metodologías ágiles de trabajo, lo que me permitió encarar proyectos de manera más efectiva.",
-      "link": "/certificates/ux_desing.jpg"
+      "title": "Curso de React desde cero a experto",
+      "description": "Este curso me ofreció conocimientos en React, Redux y JavaScript para poder resolver problemas y desarrollar aplicaciones y páginas web de alto nivel y así poder entregar una asombrosa experiencia a los usuarios.",
+      "link": "https://www.udemy.com/course/react-cero-experto/"
     },
     {
       "id": 4,
-      "title": "Curso de NodeJS",
+      "title": "Curso de Diseño UX/UI",
+      "description": "El curso que realicé me brindó valiosos conocimientos y prácticas en la investigación de usuarios, permitiéndome aprender cómo crear aplicaciones que satisfagan sus necesidades y ofrecer productos de alta calidad. Además, tuve la oportunidad de aprender sobre metodologías ágiles de trabajo, lo que me permitió encarar proyectos de manera más efectiva.",
+      "link": "https://codigofacilito.com/cursos/figma-interfaces"
+    },
+    {
+      "id": 5,
+      "title": "Curso de Nextjs desde cero a experto",
+      "description": "Gracias a este curso adquirí las bases de Nextjs 12, aprendi cosas del cliente pero tambien cosas del servidor. Lo mas importante que aprendi fue como trabajar con ambos",
+      "link": "https://www.udemy.com/course/nextjs-fh/"
+    },
+    {
+      "id": 6,
+      "title": "Curso de Javascript desde cero a experto",
+      "description": "Gracias a este curso adquirí las bases de javascript, aprendi su historia y su actualidad",
+      "link": "https://www.udemy.com/course/javascript-fernando-herrera/"
+    },
+    {
+      "id": 7,
+      "title": "Curso de Nodejs desde cero a experto",
       "description": "Gracias a este curso adquirí las bases del desarrollo de APIs Restful en NodeJS, WebServers y el manejo de WebSockets con la librería SocketIo.",
-      "link": "/certificates/nodejs.jpg"
+      "link": "https://www.udemy.com/course/node-de-cero-a-experto/"
+    },
+    {
+      "id": 8,
+      "title": "Bootcamp de Nodejs aplicado",
+      "description": "En este bootcamp del gran profesor Daniel Segovia, aprendi como pensar como backend y profundice mi conocimiento en el back",
+      "actual": true,
+      "link": "https://danielsegovia.com/plataforma/"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "title": "No-Country - Dev Frontend",
+      "description": "Un entorno de trabajo simulado, simula un ambiente de startup",
+      "certificado": false,
+      "actual": true,
+      "link": "https://www.nocountry.tech/"
     }
   ]
 }
