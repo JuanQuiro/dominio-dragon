@@ -200,7 +200,7 @@ export default function Home() {
         </article>
       </section>
         <article className="bg-[#f5cb5c]">
-          <h2 className='text-black p-2 text-center items-end'>Siempre he considerado que lo mas importante de un dev son sus proyectos, dale <Link className='link text-black font-bold bg-[#d6a009]' href=''> click aqui</Link> para ver algunos de los mios</h2>
+          <h2 className='text-black p-2 text-center items-end'>Siempre he considerado que lo mas importante de un dev son sus proyectos, dale <Link className='link text-black font-bold bg-[#d6a009]' href='/projects'> click aqui</Link> para ver algunos de los mios</h2>
         </article>
     </main>
   );
