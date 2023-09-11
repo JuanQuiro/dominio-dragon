@@ -3,7 +3,7 @@ import Image from "next/image";
 import MyImage from "@/public/headshot.webp";
 import SplashBg from "@/public/imgs/splash_bg.png";
 import Link from "next/link";
-import data from "@/data.json" assert { type: "JSON" };
+import data from "@/data.json";
 import { RoughNotation } from "react-rough-notation";
 import "./globals.css";
 import {

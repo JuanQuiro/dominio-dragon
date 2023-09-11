@@ -30,6 +30,7 @@ const navigation = [
   },
 ];
 
+// million-ignore
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

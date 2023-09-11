@@ -1,6 +1,6 @@
 import Project from "@/components/Project";
 
-import data from "@/data.json" assert { type: "JSON" };
+import data from "@/data.json";
 
 export const metadata = {
   title: "Portfolio - Proyectos",
