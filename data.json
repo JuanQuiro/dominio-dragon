@@ -256,6 +256,190 @@
       ],
       "demo": "https://mariaflariva1.wixsite.com/espanol/sobre",
       "img": "/projects/img/8.png"
+    },
+    {
+      "id": 9,
+      "name": "SoundWave",
+      "short_description": "Es un reto de NoCountry en el hicimos una red social de Musicos por motivos de coste los servidores no estan en funcionamiento",
+      "description": "Es el reto de NoCOuntry donde estuve con un equipo de porgramadores, teneamos que reportarnos y gestionarnos segun las metedologia scrum",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://swave.vercel.app/",
+      "img": "/projects/img/9.png"
+    },
+    {
+      "id": 10,
+      "name": "Reto FrontMentor",
+      "short_description": "Es un reto de FrontMentor en estos retos nos ponen hacer trabajos simple pero bien estilizados",
+      "description": "Es el reto de FM en ella hay una calculadora con varios temas",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://fm-04.vercel.app/",
+      "img": "/projects/img/10.png"
+    },
+    {
+      "id": 11,
+      "name": "Reto FrontMentor",
+      "short_description": "Es un reto de FrontMentor en estos retos nos ponen hacer trabajos simple pero bien estilizados",
+      "description": "Es el reto de FM, en ella hago se pide un consejo aun api(servidor), hago que aparezca un cargando y cuando cargue la muestro",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://fm-04-23fx.vercel.app/",
+      "img": "/projects/img/11.png"
+    },
+    {
+      "id": 12,
+      "name": "Reto FrontMentor",
+      "short_description": "Es un reto de FrontMentor en estos retos nos ponen hacer trabajos simple pero bien estilizados",
+      "description": "Es el reto de FM",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://fm-challenges-iota.vercel.app/",
+      "img": "/projects/img/12.png"
+    },
+    {
+      "id": 13,
+      "name": "Pagina de Baterias",
+      "short_description": "Es una pagina para un cliente",
+      "description": "Es una pagina para un cliente",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://landing-page-batteries.vercel.app/",
+      "img": "/projects/img/13.png"
+    },
+    {
+      "id": 14,
+      "name": "LatinTours - Pagina de Tours",
+      "short_description": "Es una pagina para un cliente",
+      "description": "Es una pagina para un cliente",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://landing-page-batteries.vercel.app/",
+      "img": "/projects/img/14.png"
+    },
+    {
+      "id": 15,
+      "name": "WorkWake",
+      "short_description": "Es un reto de NoCountry en el actue como PM y Dev",
+      "description": "Es un reto de Nocountry",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://workwake.onrender.com/",
+      "img": "/projects/img/15.png"
+    },
+    {
+      "id": 16,
+      "name": "FitTrackr",
+      "short_description": "Fue mi primer reto de NoCountry",
+      "description": "Es un reto de Nocountry",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "resources": ["React Icons", "Sonner", "tailwindcss"],
+      "contributors": [
+        {
+          "username": "Juan Quiroz",
+          "profile": "https://github.com/JuanQuiro"
+        }
+      ],
+      "demo": "https://fittrackr.vercel.app/",
+      "img": "/projects/img/16.png"
     }
   ],
   "educations": [
