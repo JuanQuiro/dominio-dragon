@@ -1,22 +1,19 @@
-import Project from "@/components/Project"
+import Project from "@/components/Project";
 
-import data from '@/data.json' assert { type: 'JSON' };
+import data from "@/data.json" assert { type: "JSON" };
 
 export const metadata = {
-  title: 'Portfolio - Proyectos'
-}
+  title: "Portfolio - Proyectos",
+};
 
 export default function page() {
-
-  const { projects } = data
+  const { projects } = data;
 
   return (
-    <section className="relative grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-items-center w-full">
+    <section className="relative grid grid-cols-1 pb-11 gap-9 lg:grid-cols-2 xl:grid-cols-3 justify-items-center ">
       {projects.map((project, idx) => {
-        return (
-          <Project key={idx} project={project} />
-        )
+        return <Project key={idx} idx={idx} project={project} />;
       })}
     </section>
-  )
+  );
 }

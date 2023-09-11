@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import localFont  from "next/font/local";
+import localFont from "next/font/local";
+import { ProvidersUI } from "@/components/ProviderUI";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,12 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${inter.className}  bg-gradient-to-tr from-black to-neutral-800 scroll`}
+        className={`${inter.className} scroll`}
       >
-        <Navbar />
-        {children}
+        <ProvidersUI>
+          <Navbar />
+          {children}
+        </ProvidersUI>
       </body>
     </html>
   );

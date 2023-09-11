@@ -11,7 +11,7 @@ export default function page() {
   const { backend, frontend, others } = skills
 
   return (
-    <section>
+    <>
       <div className="container mx-auto">
         <h2 className="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-5xl font-bold leading-[1.2] tracking-tight text-transparent text-center my-6">Conocimientos</h2>
         <div className="max-w-[978px] mx-auto">
@@ -56,6 +56,6 @@ export default function page() {
           </>
         </div>
       </div>
-    </section>
+    </>
   )
 }
