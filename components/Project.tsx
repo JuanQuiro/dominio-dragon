@@ -63,7 +63,7 @@ export default function App(prop: Project) {
             src={prop.project.img}
             alt="NextUI Album Cover"
           />
-          <p className="line-clamp-3 mt-2">{prop.project.description}</p>
+          <p className="line-clamp-3 mt-2">{prop.project.short_description}</p>
         </CardBody>
         <Divider />
         <CardFooter className="bg-[#f5cb5c] duration-400 group-hover:bg-orange-600 text-black ">
