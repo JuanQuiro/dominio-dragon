@@ -261,7 +261,7 @@
       "id": 9,
       "name": "SoundWave",
       "short_description": "Es un reto de NoCountry en el hicimos una red social de Musicos por motivos de coste los servidores no estan en funcionamiento",
-      "description": "Es el reto de NoCOuntry donde estuve con un equipo de programadores, teneamos que reportarnos y gestionarnos segun las metedologia scrum",
+      "description": "Es el reto de NoCountry donde estuve con un equipo de programadores, teneamos que reportarnos y gestionarnos segun las metedologia scrum",
       "technologies": [
         "TypeScript",
         "HTML",
@@ -399,7 +399,7 @@
       "id": 15,
       "name": "WorkWake",
       "short_description": "Es un reto de NoCountry en el actue como PM y Dev",
-      "description": "Es un reto de Nocountry",
+      "description": "Es el primer reto de Nocountry",
       "technologies": [
         "TypeScript",
         "HTML",
