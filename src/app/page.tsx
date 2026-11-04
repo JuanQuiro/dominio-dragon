@@ -1,9 +1,5 @@
-import Image from "next/image";
-import Index from "../components/index";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
-  return (
-    <div>
-      </ div>
-  );
+  return <Portfolio />;
 }
