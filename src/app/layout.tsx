@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s · Juan Quiroz",
   },
   description:
-    "Construí y lancé en solitario dos productos en producción: Cocolu Ventas, SaaS de ventas y contabilidad para PYMES de LATAM, y Apexo, ERP clínico de 59 módulos con ML en Rust. Cinco años en FinTech, automatización y ERP.",
+    "Construí y lancé en solitario dos productos en producción: Cocolu Ventas, SaaS de ventas y contabilidad para PYMES de LATAM, y SOS Dental, ERP clínico de 59 módulos con ML en Rust. Cinco años en FinTech, automatización y ERP.",
   keywords: [
     "Juan Quiroz",
     "founding engineer",
