@@ -110,7 +110,7 @@ export const copy: Record<Lang, Copy> = {
         {
           name: "Cocolu Ventas",
           kind: "SaaS B2B · Ventas, inventario y contabilidad",
-          body: "Para PYMES de LATAM. Backend hexagonal en TypeScript con seis módulos acotados, esquema de 41 tablas y 303 rutas HTTP. Bot de pedidos por WhatsApp que consulta stock y confirma pagos, cobro multimoneda (Zelle, PayPal, Pago Móvil, efectivo), panel React 18 con roles y 349 archivos de prueba.",
+          body: "Para PYMES de LATAM. Backend hexagonal en TypeScript con seis módulos acotados, esquema de 41 tablas y 303 rutas HTTP. Bot de pedidos por WhatsApp que consulta stock y confirma pagos, cobro multimoneda (Zelle, PayPal, Pago Móvil, efectivo), panel React 18 con roles y 349 archivos de prueba. El producto completo se construyó en 8 semanas.",
           metrics: [
             { value: "67 mil", label: "líneas de TypeScript" },
             { value: "303", label: "rutas HTTP" },
@@ -274,7 +274,7 @@ export const copy: Record<Lang, Copy> = {
         {
           name: "Cocolu Ventas",
           kind: "B2B SaaS · Sales, inventory & accounting",
-          body: "Built for LATAM small businesses. Hexagonal TypeScript backend across six bounded modules, a 41-table schema, and 303 HTTP routes. WhatsApp ordering bot that checks stock and confirms payments, multi-currency checkout (Zelle, PayPal, Pago Móvil, cash), React 18 admin with roles, and 349 test files.",
+          body: "Built for LATAM small businesses. Hexagonal TypeScript backend across six bounded modules, a 41-table schema, and 303 HTTP routes. WhatsApp ordering bot that checks stock and confirms payments, multi-currency checkout (Zelle, PayPal, Pago Móvil, cash), React 18 admin with roles, and 349 test files. The whole product shipped in 8 weeks.",
           metrics: [
             { value: "67k", label: "lines of TypeScript" },
             { value: "303", label: "HTTP routes" },
