@@ -135,19 +135,39 @@ export const copy: Record<Lang, Copy> = {
             "Dos productos en producción, de la arquitectura al despliegue y la operación.",
         },
         {
-          period: "2023 — 2025",
-          company: "Consultoría independiente",
-          title: "Líder Full Stack & Arquitecto",
+          period: "2025 — Presente",
+          company: "UNITEC",
+          title: "Asistente de Vice Rectorado",
           summary:
-            "RPA para un socio logístico asiático, integraciones SAP HANA para un grupo retail y el motor de crédito de una financiera de vehículos.",
-          detail: "Empresys · Daka · MotoStudio",
+            "Portal Drupal y Excel para Vice-Rectorado; biblioteca y repositorio con DSpace, OJS y CRIS-lite.",
+        },
+        {
+          period: "oct 2023 — Presente",
+          company: "MotoStudio",
+          title: "Líder Técnico Fraccional & Arquitecto",
+          summary:
+            "Motor de crédito, conciliación bancaria y pasarelas PCI DSS para una financiera de vehículos.",
+        },
+        {
+          period: "oct 2024 — mar 2025",
+          company: "Daka",
+          title: "Consultor de Desarrollo de Aplicaciones",
+          summary:
+            "Integraciones SAP HANA y reportes SQL para el brazo tecnológico de un grupo retail.",
+        },
+        {
+          period: "oct 2023 — jun 2024",
+          company: "Empresys",
+          title: "Líder Full Stack & Ingeniero RPA",
+          summary:
+            "RPA a escala para un socio logístico asiático: 100% de la ingesta y los reportes automatizados.",
         },
         {
           period: "2022 — 2023",
           company: "NoCountry",
           title: "Líder Técnico",
           summary:
-            "Squad de frontend a backend: entrega 30% más rápida, Lighthouse 95+ y mentoría en XP y TDD.",
+            "Squad de frontend a backend: entrega 30% más rápida y mentoría en XP y TDD.",
         },
       ],
     },
@@ -270,19 +290,39 @@ export const copy: Record<Lang, Copy> = {
             "Two products in production, from architecture through deployment and operations.",
         },
         {
-          period: "2023 — 2025",
-          company: "Independent consulting",
-          title: "Full Stack Lead & Architect",
+          period: "2025 — Present",
+          company: "UNITEC",
+          title: "Assistant to the Vice-Rector",
           summary:
-            "RPA for a major Asian logistics partner, SAP HANA integrations for a retail group, and the credit engine of a vehicle financing platform.",
-          detail: "Empresys · Daka · MotoStudio",
+            "Drupal portal and Excel for the Vice-Rector's office; library and repository work with DSpace, OJS, and CRIS-lite.",
+        },
+        {
+          period: "Oct 2023 — Present",
+          company: "MotoStudio",
+          title: "Fractional Technical Lead & Architect",
+          summary:
+            "Credit engine, bank reconciliation, and PCI DSS gateways for a vehicle financing platform.",
+        },
+        {
+          period: "Oct 2024 — Mar 2025",
+          company: "Daka",
+          title: "Application Development Consultant",
+          summary:
+            "SAP HANA integrations and SQL reporting for the technology arm of a retail group.",
+        },
+        {
+          period: "Oct 2023 — Jun 2024",
+          company: "Empresys",
+          title: "Full Stack Lead & RPA Engineer",
+          summary:
+            "Enterprise RPA for a major Asian logistics partner: 100% of ingestion and reporting automated.",
         },
         {
           period: "2022 — 2023",
           company: "NoCountry",
           title: "Technical Lead",
           summary:
-            "Squad from frontend to backend: 30% faster delivery, Lighthouse 95+, and mentoring in XP and TDD.",
+            "Squad from frontend to backend: 30% faster delivery and mentoring in XP and TDD.",
         },
       ],
     },
