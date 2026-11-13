@@ -147,20 +147,20 @@ export default function Portfolio() {
         {/* ---------------- HERO ---------------- */}
         <section className="mx-auto max-w-page px-5 pb-16 pt-14 sm:px-8 sm:pb-20 sm:pt-24">
           <div className="rise flex items-center gap-2.5">
-            <span
-              className="h-1.5 w-1.5 rounded-full bg-accent"
-              aria-hidden="true"
-            />
+            <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+            </span>
             <span className="text-[0.64rem] uppercase tracking-[0.18em] text-muted">
               {t.hero.availability}
             </span>
           </div>
 
-          <h1 className="rise rise-1 mt-7 text-[clamp(3rem,9vw,5.6rem)] font-extrabold leading-[0.9] tracking-tightest">
+          <h1 className="rise rise-1 mt-7 text-balance text-[clamp(3rem,10vw,6.2rem)] font-extrabold leading-[0.88] tracking-tightest">
             Juan Quiroz
           </h1>
 
-          <p className="rise rise-1 mt-5 text-[clamp(1.05rem,2.4vw,1.45rem)] font-medium tracking-[-0.015em] text-accent">
+          <p className="rise rise-1 mt-6 text-[clamp(1.05rem,2.4vw,1.5rem)] font-medium tracking-[-0.015em] text-accent">
             {t.hero.role}
           </p>
 
@@ -192,6 +192,34 @@ export default function Portfolio() {
           </div>
         </section>
 
+        {/* ---------------- PROOF ---------------- */}
+        <section
+          aria-label={t.proof.label}
+          className="border-y border-accent bg-accent text-paper"
+        >
+          <div className="mx-auto max-w-page px-5 py-9 sm:px-8 sm:py-10">
+            <div className="flex items-center gap-3 text-[0.6rem] font-medium uppercase tracking-[0.2em] text-paper/55">
+              <span className="h-px w-6 bg-paper/35" aria-hidden="true" />
+              {t.proof.label}
+            </div>
+            <dl className="mt-6 grid grid-cols-2 gap-x-8 gap-y-7 border-t border-paper/20 pt-7 sm:grid-cols-4">
+              {t.proof.items.map((m) => (
+                <div
+                  key={m.label}
+                  className="sm:border-l sm:border-paper/20 sm:pl-7 sm:first:border-l-0 sm:first:pl-0"
+                >
+                  <dd className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-none tracking-[-0.03em] tabular-nums">
+                    {m.value}
+                  </dd>
+                  <dt className="mt-2 text-[0.6rem] uppercase leading-snug tracking-[0.14em] text-paper/60">
+                    {m.label}
+                  </dt>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
         {/* ---------------- WORK ---------------- */}
         <Section
           id="work"
@@ -219,13 +247,17 @@ export default function Portfolio() {
                   {p.body}
                 </p>
 
-                <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6 border-y border-line py-6 sm:grid-cols-4">
+                <div className="mt-8 grid grid-cols-2 gap-x-8 gap-y-6 border-y border-line py-6 sm:grid-cols-4">
                   {p.metrics.map((m) => (
                     <div key={m.label}>
-                      <div className="text-[1.4rem] font-semibold leading-none tracking-[-0.02em] text-accent">
+                      <div className="text-[1.7rem] font-semibold leading-none tracking-[-0.03em] tabular-nums text-accent">
                         {m.value}
                       </div>
-                      <div className="mt-1.5 text-[0.64rem] uppercase leading-snug tracking-[0.11em] text-muted">
+                      <div className="mt-2.5 flex items-start gap-2 text-[0.62rem] uppercase leading-snug tracking-[0.11em] text-muted">
+                        <span
+                          className="mt-[4px] h-px w-3 shrink-0 bg-accent/40"
+                          aria-hidden="true"
+                        />
                         {m.label}
                       </div>
                     </div>
@@ -259,8 +291,14 @@ export default function Portfolio() {
                 key={r.company}
                 className="grid gap-2 border-t border-line py-7 first:border-t-0 first:pt-0 sm:grid-cols-[150px_1fr] sm:gap-8"
               >
-                <span className="text-[0.66rem] uppercase tracking-[0.12em] text-muted sm:pt-1">
-                  {r.period}
+                <span className="flex items-start gap-2 text-[0.66rem] uppercase tracking-[0.12em] text-muted sm:pt-1">
+                  {r.period.includes("Present") ? (
+                    <span className="relative mt-[5px] flex h-1.5 w-1.5 shrink-0">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-50" />
+                      <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+                    </span>
+                  ) : null}
+                  <span>{r.period}</span>
                 </span>
                 <div>
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
@@ -311,62 +349,70 @@ export default function Portfolio() {
         </Section>
 
         {/* ---------------- CONTACT ---------------- */}
-        <Section
+        <section
           id="contact"
-          index={t.contact.index}
-          label={t.contact.label}
-          title={t.contact.title}
-          note={t.contact.body}
+          className="scroll-mt-16 border-t border-accent bg-accent text-paper"
         >
-          <div className="border-t border-line-strong pt-9">
+          <div className="mx-auto max-w-page px-5 py-20 sm:px-8 sm:py-24">
+            <div className="flex items-center gap-3 text-[0.64rem] font-medium uppercase tracking-[0.18em] text-paper/60">
+              <span className="tabular-nums text-paper/85">{t.contact.index}</span>
+              <span className="h-px w-8 bg-paper/30" aria-hidden="true" />
+              <span>{t.contact.label}</span>
+            </div>
+
+            <h2 className="mt-7 max-w-[20ch] text-balance text-[clamp(2.1rem,5.4vw,3.6rem)] font-semibold leading-[1.03] tracking-[-0.03em]">
+              {t.contact.title}
+            </h2>
+            <p className="mt-6 max-w-[54ch] text-[0.98rem] leading-[1.75] text-paper/70">
+              {t.contact.body}
+            </p>
+
             <a
               href={`mailto:${t.contact.email}`}
-              className="group inline-flex items-baseline gap-2 text-[clamp(1.2rem,4vw,2rem)] font-medium tracking-[-0.025em] text-accent"
+              className="group mt-12 inline-flex items-baseline gap-3 border-b border-paper/25 pb-3 text-[clamp(1.3rem,4.4vw,2.4rem)] font-medium tracking-[-0.025em] text-paper transition-colors hover:border-paper"
             >
-              <span className="underline decoration-line-strong decoration-1 underline-offset-[6px] transition-colors group-hover:decoration-accent">
-                {t.contact.email}
-              </span>
+              <span>{t.contact.email}</span>
               <ArrowUpRight
-                size={20}
+                size={24}
                 strokeWidth={1.5}
                 aria-hidden="true"
-                className="translate-y-[-2px] transition-transform group-hover:-translate-y-1 group-hover:translate-x-0.5"
+                className="translate-y-[-2px] transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"
               />
             </a>
 
-            <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+            <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4">
               {t.contact.links.map((l) => (
                 <a
                   key={l.label}
                   href={l.href}
                   target="_blank"
                   rel="me noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 text-[0.78rem] font-medium uppercase tracking-[0.1em] text-ink-soft transition-colors hover:text-accent"
+                  className="group inline-flex items-center gap-1.5 text-[0.78rem] font-medium uppercase tracking-[0.1em] text-paper/65 transition-colors hover:text-paper"
                 >
                   {l.label}
                   <ArrowUpRight
                     size={13}
                     strokeWidth={1.75}
                     aria-hidden="true"
-                    className="text-muted transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    className="text-paper/45 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                   />
                 </a>
               ))}
               <a
                 href={t.contact.cvHref}
                 download
-                className="inline-flex items-center gap-1.5 text-[0.78rem] font-medium uppercase tracking-[0.1em] text-ink-soft transition-colors hover:text-accent"
+                className="inline-flex items-center gap-1.5 text-[0.78rem] font-medium uppercase tracking-[0.1em] text-paper/65 transition-colors hover:text-paper"
               >
                 <Download size={13} strokeWidth={1.75} aria-hidden="true" />
                 {t.contact.cvLabel}
               </a>
             </div>
           </div>
-        </Section>
+        </section>
       </main>
 
-      <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-page flex-col gap-1.5 px-5 py-8 text-[0.68rem] tracking-[0.02em] text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8">
+      <footer className="border-t border-paper/15 bg-accent text-paper/50">
+        <div className="mx-auto flex max-w-page flex-col gap-1.5 px-5 py-8 text-[0.68rem] tracking-[0.02em] sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <span>© 2026 {t.footer.rights}</span>
           <span>{t.footer.built}</span>
         </div>

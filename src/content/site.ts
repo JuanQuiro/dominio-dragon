@@ -31,6 +31,10 @@ export type Copy = {
     ctaContact: string;
     cvHref: string;
   };
+  proof: {
+    label: string;
+    items: Metric[];
+  };
   work: {
     index: string;
     label: string;
@@ -81,11 +85,20 @@ export const copy: Record<Lang, Copy> = {
       role: "Fundador técnico · Ingeniero full-stack",
       availability: "Disponible para roles remotos",
       intro:
-        "Diseño, construyo y despliego productos completos: backend, frontend, datos e infraestructura. Dos de ellos están en producción hoy, construidos y mantenidos en solitario.",
+        "Cinco años construyendo productos completos: backend, frontend, datos e infraestructura. Dos están en producción hoy, construidos y mantenidos en solitario.",
       location: "Carabobo, Venezuela\nUTC−4 · Remoto",
       ctaCv: "Descargar CV",
       ctaContact: "Escribime",
       cvHref: "/cv/juan-quiroz-cv-es.pdf",
+    },
+    proof: {
+      label: "Construido y mantenido en solitario",
+      items: [
+        { value: "2", label: "productos en producción" },
+        { value: "67K", label: "líneas de código" },
+        { value: "303", label: "rutas HTTP" },
+        { value: "59", label: "módulos de ERP" },
+      ],
     },
     work: {
       index: "01",
@@ -236,11 +249,20 @@ export const copy: Record<Lang, Copy> = {
       role: "Technical founder · Full-stack engineer",
       availability: "Open to remote roles",
       intro:
-        "I design, build, and ship complete products — backend, frontend, data, and infrastructure. Two of them are in production today, both built and maintained solo.",
+        "Five years building complete products — backend, frontend, data, and infrastructure. Two are in production today, both built and maintained solo.",
       location: "Carabobo, Venezuela\nUTC−4 · Remote",
       ctaCv: "Download CV",
       ctaContact: "Get in touch",
       cvHref: "/cv/juan-quiroz-cv-en.pdf",
+    },
+    proof: {
+      label: "Built and maintained solo",
+      items: [
+        { value: "2", label: "products in production" },
+        { value: "67K", label: "lines of code" },
+        { value: "303", label: "HTTP routes" },
+        { value: "59", label: "ERP modules" },
+      ],
     },
     work: {
       index: "01",
