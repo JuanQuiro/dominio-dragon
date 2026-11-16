@@ -178,9 +178,9 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2022 — 2023",
           company: "NoCountry",
-          title: "Líder Técnico",
+          title: "Líder Técnico & PM",
           summary:
-            "Squad de frontend a backend: entrega 30% más rápida y mentoría en XP y TDD.",
+            "Frontend → Full Stack → Líder Técnico & PM: squad de frontend a backend, entrega 30% más rápida y mentoría en XP y TDD.",
         },
       ],
     },
@@ -342,9 +342,9 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2022 — 2023",
           company: "NoCountry",
-          title: "Technical Lead",
+          title: "Technical Lead & PM",
           summary:
-            "Squad from frontend to backend: 30% faster delivery and mentoring in XP and TDD.",
+            "Frontend → Full Stack → Technical Lead & PM: squad from frontend to backend, 30% faster delivery and mentoring in XP and TDD.",
         },
       ],
     },
