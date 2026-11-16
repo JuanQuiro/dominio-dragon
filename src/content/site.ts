@@ -7,6 +7,7 @@ type Product = {
   body: string;
   metrics: Metric[];
   stack: string;
+  href?: string;
 };
 type Role = {
   period: string;
@@ -14,6 +15,7 @@ type Role = {
   title: string;
   summary: string;
   detail?: string;
+  href?: string;
 };
 type StackGroup = { label: string; items: string };
 
@@ -109,6 +111,7 @@ export const copy: Record<Lang, Copy> = {
       products: [
         {
           name: "Cocolu Ventas",
+          href: "https://chatboot-cocoluventas.vercel.app",
           kind: "SaaS B2B · Ventas, inventario y contabilidad",
           body: "Para PYMES de LATAM. Backend hexagonal en TypeScript con seis módulos acotados, esquema de 41 tablas y 303 rutas HTTP. Bot de pedidos por WhatsApp que consulta stock y confirma pagos, cobro multimoneda (Zelle, PayPal, Pago Móvil, efectivo), panel React 18 con roles y 349 archivos de prueba. El producto completo se construyó en 8 semanas.",
           metrics: [
@@ -143,6 +146,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2025 — Presente",
           company: "Ember Drago",
+          href: "https://ember-drago.vercel.app",
           title: "Fundador & Ingeniero de Software",
           summary:
             "Dos productos en producción, de la arquitectura al despliegue y la operación.",
@@ -150,6 +154,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2025 — Presente",
           company: "UNITEC",
+          href: "https://portal.unitec.edu.ve/",
           title: "Asistente de Vice Rectorado",
           summary:
             "Portal Drupal y Excel para Vice-Rectorado; biblioteca y repositorio con DSpace, OJS y CRIS-lite.",
@@ -157,6 +162,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "oct 2023 — Presente",
           company: "MotoStudio",
+          href: "https://motostudiove.com/",
           title: "Líder Técnico Fraccional & Arquitecto",
           summary:
             "Motor de crédito, conciliación bancaria y pasarelas PCI DSS para una financiera de vehículos.",
@@ -164,6 +170,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "oct 2024 — mar 2025",
           company: "Daka",
+          href: "https://tiendasdaka.com/ve",
           title: "Consultor de Desarrollo de Aplicaciones",
           summary:
             "Integraciones SAP HANA y reportes SQL para el brazo tecnológico de un grupo retail.",
@@ -171,6 +178,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "oct 2023 — jun 2024",
           company: "Empresys",
+          href: "https://www.empresys.com/",
           title: "Líder Full Stack & Ingeniero RPA",
           summary:
             "RPA a escala para un socio logístico asiático: 100% de la ingesta y los reportes automatizados.",
@@ -178,6 +186,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2022 — 2023",
           company: "NoCountry",
+          href: "https://www.nocountry.tech/",
           title: "Líder Técnico & PM",
           summary:
             "Frontend → Full Stack → Líder Técnico & PM: squad de frontend a backend, entrega 30% más rápida y mentoría en XP y TDD.",
@@ -273,6 +282,7 @@ export const copy: Record<Lang, Copy> = {
       products: [
         {
           name: "Cocolu Ventas",
+          href: "https://chatboot-cocoluventas.vercel.app",
           kind: "B2B SaaS · Sales, inventory & accounting",
           body: "Built for LATAM small businesses. Hexagonal TypeScript backend across six bounded modules, a 41-table schema, and 303 HTTP routes. WhatsApp ordering bot that checks stock and confirms payments, multi-currency checkout (Zelle, PayPal, Pago Móvil, cash), React 18 admin with roles, and 349 test files. The whole product shipped in 8 weeks.",
           metrics: [
@@ -307,6 +317,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2025 — Present",
           company: "Ember Drago",
+          href: "https://ember-drago.vercel.app",
           title: "Founder & Software Engineer",
           summary:
             "Two products in production, from architecture through deployment and operations.",
@@ -314,6 +325,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2025 — Present",
           company: "UNITEC",
+          href: "https://portal.unitec.edu.ve/",
           title: "Assistant to the Vice-Rector",
           summary:
             "Drupal portal and Excel for the Vice-Rector's office; library and repository work with DSpace, OJS, and CRIS-lite.",
@@ -321,6 +333,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "Oct 2023 — Present",
           company: "MotoStudio",
+          href: "https://motostudiove.com/",
           title: "Fractional Technical Lead & Architect",
           summary:
             "Credit engine, bank reconciliation, and PCI DSS gateways for a vehicle financing platform.",
@@ -328,6 +341,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "Oct 2024 — Mar 2025",
           company: "Daka",
+          href: "https://tiendasdaka.com/ve",
           title: "Application Development Consultant",
           summary:
             "SAP HANA integrations and SQL reporting for the technology arm of a retail group.",
@@ -335,6 +349,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "Oct 2023 — Jun 2024",
           company: "Empresys",
+          href: "https://www.empresys.com/",
           title: "Full Stack Lead & RPA Engineer",
           summary:
             "Enterprise RPA for a major Asian logistics partner: 100% of ingestion and reporting automated.",
@@ -342,6 +357,7 @@ export const copy: Record<Lang, Copy> = {
         {
           period: "2022 — 2023",
           company: "NoCountry",
+          href: "https://www.nocountry.tech/",
           title: "Technical Lead & PM",
           summary:
             "Frontend → Full Stack → Technical Lead & PM: squad from frontend to backend, 30% faster delivery and mentoring in XP and TDD.",

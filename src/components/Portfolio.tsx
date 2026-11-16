@@ -236,7 +236,19 @@ export default function Portfolio() {
               >
                 <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
                   <h3 className="text-[1.55rem] font-semibold leading-tight tracking-[-0.025em]">
-                    {p.name}
+                    {p.href ? (
+                      <a
+                        href={p.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="transition-colors hover:text-accent"
+                      >
+                        {p.name}
+                        <span className="ml-1.5 align-super text-[0.55em] text-muted">↗</span>
+                      </a>
+                    ) : (
+                      p.name
+                    )}
                   </h3>
                   <span className="text-[0.64rem] uppercase tracking-[0.13em] text-muted">
                     {p.kind}
@@ -303,7 +315,19 @@ export default function Portfolio() {
                 <div>
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
                     <h3 className="text-[1.02rem] font-semibold tracking-[-0.01em]">
-                      {r.company}
+                      {r.href ? (
+                        <a
+                          href={r.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="transition-colors hover:text-accent"
+                        >
+                          {r.company}
+                          <span className="ml-1 align-super text-[0.6em] text-muted">↗</span>
+                        </a>
+                      ) : (
+                        r.company
+                      )}
                     </h3>
                     <span className="text-[0.82rem] text-accent">
                       {r.title}
