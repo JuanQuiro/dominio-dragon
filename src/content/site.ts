@@ -125,6 +125,7 @@ export const copy: Record<Lang, Copy> = {
         },
         {
           name: "SOS Dental",
+          href: "https://odonto.142-4-37-132.sslip.io/",
           kind: "ERP clínico · Flutter Web + Rust",
           body: "59 módulos para una clínica odontológica: pacientes, citas, odontograma, pagos, nómina, inventario, farmacia y analítica. Servicio ML en Rust (axum + ONNX) que predice churn, LTV y cancelación de citas, integrado al panel. Interfaz en español, inglés y árabe; auditoría y acceso por roles.",
           metrics: [
@@ -296,6 +297,7 @@ export const copy: Record<Lang, Copy> = {
         },
         {
           name: "SOS Dental",
+          href: "https://odonto.142-4-37-132.sslip.io/",
           kind: "Clinic ERP · Flutter Web + Rust",
           body: "59 modules for a dental clinic: patients, appointments, odontogram, payments, payroll, inventory, pharmacy, and analytics. A Rust ML service (axum + ONNX) predicts churn, LTV, and appointment cancellation, wired into the dashboard. Spanish, English, and Arabic UI; audit logging and role-based access.",
           metrics: [
