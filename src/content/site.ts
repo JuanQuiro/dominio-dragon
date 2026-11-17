@@ -161,7 +161,7 @@ export const copy: Record<Lang, Copy> = {
             "Portal Drupal y Excel para Vice-Rectorado; biblioteca y repositorio con DSpace, OJS y CRIS-lite.",
         },
         {
-          period: "oct 2023 — Presente",
+          period: "oct 2023 — oct 2024",
           company: "MotoStudio",
           href: "https://motostudiove.com/",
           title: "Líder Técnico Fraccional & Arquitecto",
@@ -333,7 +333,7 @@ export const copy: Record<Lang, Copy> = {
             "Drupal portal and Excel for the Vice-Rector's office; library and repository work with DSpace, OJS, and CRIS-lite.",
         },
         {
-          period: "Oct 2023 — Present",
+          period: "Oct 2023 — Oct 2024",
           company: "MotoStudio",
           href: "https://motostudiove.com/",
           title: "Fractional Technical Lead & Architect",
